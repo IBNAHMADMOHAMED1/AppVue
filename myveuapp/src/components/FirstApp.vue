@@ -2,6 +2,10 @@
     <div>
          <SecondApp />
         <div v-bind:class="getStyel()">mohamedibnahmad</div>
+        <div>{{salary}}</div>
+        <button v-on:click="inc()">inc</button>
+        <button v-on:click="dec()">dec</button>
+
         <h2>{{msg}}</h2>
         <p>{{nom}}</p>
 
@@ -21,13 +25,24 @@ data(){
     return {
         
         nom : 'mohamed',
-        className : 'f1'
+        className : 'f1',
+        salary : 12
+        
         
     }
 },
 methods : {
     getStyel(){
         return 'f1'
+    },
+    // get(){
+    //     console.log('don!')
+    // }
+    inc(){
+        return this.salary++
+    },
+    dec(){
+        return this.salary--;
     }
 }
 
