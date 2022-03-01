@@ -22,6 +22,17 @@ const routes = [
     path : '/Contact',
     name:'ContactView',
     component: () => import('../views/ContactView.vue')
+  },
+  {
+    path : '/User',
+    name:'UserView',
+    redirect:'/Contact',
+    component: () => import('../views/UsersView.vue')
+  },
+  {
+    path : '/profile/:name/:price',
+    name:'ProfileView',
+    component: () => import('../views/ProfileView.vue')
   }
 ]
 
