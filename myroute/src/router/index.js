@@ -26,7 +26,7 @@ const routes = [
   {
     path : '/User',
     name:'UserView',
-    redirect:'/Contact',
+    // redirect:'/Contact',
     component: () => import('../views/UsersView.vue')
   },
   {

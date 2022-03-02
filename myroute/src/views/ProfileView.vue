@@ -12,8 +12,11 @@
 </template>
 
 <script>
+
+
 export default {
-    name: 'ProfileView'
+    name: 'ProfileView',
+    
 }
 
 </script>
